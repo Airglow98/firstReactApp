@@ -1,3 +1,4 @@
 export default function Badge2(){
-    <p>0</p>
+    return(
+    <p className="badge">0</p>)
 }

@@ -2,6 +2,6 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    gap: 2em;
+    gap: 5px;
     margin-left: 1em;
 }

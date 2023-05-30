@@ -1,3 +1,6 @@
+import "./badge.css"
+
 export default function Badge1(){
-    <p>0</p>
+    return(
+    <p className="badge">0</p>)
 }

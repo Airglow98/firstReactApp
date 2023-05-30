@@ -7,7 +7,7 @@ export default function Tab () {
  <div className="Tab-div">
  <p>All Entries</p> 
  <Badge1/>
- <p>Favorites</p> 
+ <p className="badge-Favorites">Favorites</p> 
  <Badge2/>
 </div>
 </> )
