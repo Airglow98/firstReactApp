@@ -1,0 +1,7 @@
+.badge {
+    background-color: var(--color-nemo-dark);
+    border-radius: 25%;
+    width: 1em;
+    text-align: center;
+    color: var(--color-foam);
+}

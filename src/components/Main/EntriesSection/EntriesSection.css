@@ -1,0 +1,30 @@
+.EntriesSection-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10vw;
+    margin-left: 3vw;
+}
+
+.EntriesSection-date {
+    text-align: center;
+}
+
+.EntriesSection-article{
+    border-bottom: solid var(--color-water-10) 1px;
+    margin: 1em;
+    position: relative;
+}
+
+.EntriesSection-article:last-of-type{
+  border-bottom: solid var(--color-water-10) 1px;
+  margin: 1em;
+  position: relative;
+  margin-bottom: 3em;
+}
+
+.svg-star{
+    position: absolute;
+    right: 1em;
+  top: 2em;
+}
