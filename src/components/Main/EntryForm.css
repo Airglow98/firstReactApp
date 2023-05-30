@@ -1,0 +1,61 @@
+:root {
+    /* Used for texts (+ footer background) */
+    --color-granite: #252629;
+    /* Used for backgrounds (+ footer text color) */
+    --color-foam: #ffffff;
+    /* Used for buttons, icons, etc. */
+    --color-nemo: #ff4a11;
+    /* active color for buttons, icons, etc. */
+    --color-nemo-mid: #ff5c29;
+    /* hover color for buttons, icons, etc. */
+    --color-nemo-dark: #e5430f;
+    /* Used for borders and some backgrounds */
+    --color-water-10: #e4e8f0;
+  }
+
+.EntryForm-form  {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.EntryForm-textarea {
+    height: 10%;
+    width: 90%;
+    resize: none;
+}
+
+.label-legendName{
+    align-self: flex-start;
+    margin-left: 5%;
+}
+
+.label-legendName2{
+    align-self: flex-start;
+    margin-left: 5%;
+}
+
+.EntryForm-textarea2 {
+    height: 20vw; 
+    width: 90%;
+    resize: none;
+}
+
+.EntryForm-button {
+    color: white;
+    background-color: var(--color-nemo);
+    border: none;
+    border-radius: 8%;
+    width: 30vw;
+    height: 10vw;
+    margin: 5vw 0;
+    
+}
+
+.EntryForm-h2 {
+    margin-top: 10vh;
+    text-align: center;
+    font-size: 1em;
+}
+
+
