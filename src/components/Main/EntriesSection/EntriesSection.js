@@ -1,17 +1,27 @@
 import "./EntriesSection.css"
+import FavouriteButton from "./FavouriteButton"
+import Entrycard from "./Entrycard";
+import {initialEntries} from "../../../utils/initialEntries"
+import { useState } from "react";
 
-export default function EntriesSection({articleDescription, articleTitle}){
-    return(
+
+export default function EntriesSection() {
+    const[entries, setEntries] = useState(initialEntries)
+    return (
     <>
     <section className="EntriesSection-section">
     </section>
-    <article className="EntriesSection-article">
-    <p className="EntriesSection-date">May 25, 2023</p>
-        <h3>{articleTitle}</h3>
-        <p>{articleDescription}</p>
-        <svg className="svg-star" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="#252629" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-    </article>
-    </>)
+            {initialEntries.map((entry)=>(
+                    <article  className="Entrycard-article" key={entry.id}>
+                        <Entrycard 
+                        id={entry.id}
+                        date={entry.date}
+                        motto={entry.motto}
+                        notes={entry.notes}
+                        />
+                        <FavouriteButton></FavouriteButton>
+                    </article>
+            ))}
+    </>
+    );
 }
